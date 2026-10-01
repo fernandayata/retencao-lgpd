@@ -1,3 +1,17 @@
+# Retenção LGPD: Política de Ciclo de Vida e Retenção de Dados Corporativos (Data Retention & Purge)
+
+## 1. Contexto e Problema de Negócio
+No contexto de empresas com operações digitais contínuas, a ausência de diretrizes claras para o ciclo de vida da informação acarreta dois problemas críticos:
+1. **Risco Regulatório e de Conformidade:** A manutenção indeterminada de registos com dados pessoais infringe diretamente princípios basilares da legislação brasileira de proteção de dados (LGPD - Lei 13.709/2018), nomeadamente a necessidade e a limitação da conservação.
+2. **Ineficiência de Infraestrutura:** A acumulação indiscriminada de bases transacionais em camadas de armazenamento de alta performance (*Hot Storage*) eleva desnecessariamente os custos operacionais e degrada a performance de consultas analíticas.
+
+## 2. Abordagem Metodológica
+Este projeto transpõe os fundamentos da **Teoria das Três Idades** e da **Tabela de Temporalidade Documental (TTD)** — consolidados na Ciência da Informação e Arquivologia — para o ecossistema moderno de engenharia e governação de dados alinhado ao framework **DAMA-DMBOK2**.
+
+O ciclo de vida dos dados foi estruturado em três fases técnicas:
+* **Fase Corrente (*Hot Storage*):** Armazenamento em bases transacionais de alta disponibilidade enquanto persistir a finalidade operacional primária.
+* **Fase Intermediária (*Cold Storage*):** Migração para repositórios de armazenamento de menor custo (com encriptação e acesso restrito) para resguardo legal ou fiscal pendente.
+* **Destinação Final (*Purge* ou Anonimização):** Execução de expurgo irreversível para dados desprovidos de base de retenção legal, ou anonimização estatística (descaracterização conforme o Art. 12 da LGPD) para preservação de séries temporais de negócio.
 # Matriz de Temporalidade e Ciclo de Vida de Dados
 
 **Versão:** 1.0  
